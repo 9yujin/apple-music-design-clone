@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-/*row 모바일에서 양 옆 여백 설정하는 부분*/
+/*row 모바일에서 양 옆 여백 설정하는 부분!!!!!!!!!!!!*/
 .row {
   position: relative;
   margin: 0 20px;
@@ -22,28 +22,30 @@ body {
   right: 0;
   background: rgba(255, 255, 255, 0.7);
   z-index: 1;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(25px);
+  border-bottom: 1px solid #cfcfcf;
+  /*우와!! 아이폰 특유 블러 그라데이션 효과,, z-index까지.. 그냥 opacity 속성으로 주면 자식요소들까지 적용됨,,*/
 }
 #header .header-data {
   font-weight: 600;
   font-size: 12px;
-  padding-top: 30px;
+  padding-top: 10px;
   display: block;
   color: #a8a8a8;
   z-index: 2;
 }
 #header .header-title {
   font-family: AppleSDGothicNeo;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 32px;
-  /*border-bottom: 1px solid #ebebeb;*/
+  padding-top: 15px;
   padding-bottom: 10px;
   z-index: 2;
 }
 #header .header-id {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 12px;
   width: 40px;
   height: 40px;
   background-image: linear-gradient(#a4a9b5, #c4c4c4);
