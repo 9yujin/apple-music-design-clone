@@ -1,0 +1,104 @@
+/* container */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/*row 모바일에서 양 옆 여백 설정하는 부분*/
+.row {
+  position: relative;
+  margin: 0 20px;
+}
+
+/* header */
+
+#header .header-data {
+  font-weight: 600;
+  font-size: 12px;
+  padding-top: 30px;
+  display: block;
+  color: #a8a8a8;
+}
+#header .header-title {
+  font-weight: bold;
+  font-size: 32px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+#header .header-id {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(#a4a9b5, #c4c4c4);
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+/* bestM */
+.bestM .best-title .bt-stit {
+  color: #da537c;
+  font-size: 12px;
+  line-height: 1.67;
+}
+.bestM .best-title .bt-tit {
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+.bestM .best-title .bt-desc {
+  font-size: 22px;
+  font-weight: 300;
+  color: #818181;
+  margin-bottom: 10px;
+}
+
+/* recentM */
+.recentM {
+  padding-top: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.recentM .recent {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.recentM .recent:last-child {
+  margin-right: 0;
+}
+.recentM h2 {
+  font-size: 20px;
+  font-family: AppleSDGothicNeo;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  border-top: 1px solid #ebebeb;
+  padding-top: 20px;
+}
+.recentM .recent-title .rt-stit {
+  font-size: 15px;
+  line-height: 1.67;
+  font-weight: 600;
+}
+.recentM .recent-title .rt-tit {
+  font-size: 15px;
+  font-weight: 300;
+  color: #908f94;
+}
+
+/* mediaquery */
+@media (max-width: 1020px) {
+  .container {
+    width: 100%;
+  }
+}
+/* 1020보다 작을때(핸드폰크기)는 그냥 row의 여백을 따른다.
+1020보다 클때(컴퓨터)에서는 최대 1000으로 쓰는거야 (맨위 .container)*/
