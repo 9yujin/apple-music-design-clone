@@ -14,7 +14,9 @@ body {
   /* 생략 */
   padding-bottom: 110px;
 }
-
+::-webkit-scrollbar {
+  display: none !important;
+}
 /* header */
 #header {
   display: flex;
@@ -259,4 +261,4 @@ body {
   }
 }
 /* 1020보다 작을때(핸드폰크기)는 그냥 row의 여백을 따른다.
-1020보다 클때(컴퓨터)에서는 최대 1000으로 쓰는거야 (맨위 .container)*/
+1020 보다 클때(컴퓨터)에서는 최대 1000으로 쓰는거야 (맨위 .container)*/
