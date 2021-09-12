@@ -16,6 +16,8 @@ body {
 
 /* header */
 #header {
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
   /* width: 100% */
@@ -28,7 +30,7 @@ body {
   border-bottom: 1px solid #e6e6e6;
   /*우와!! 아이폰 특유 블러 그라데이션 효과,, z-index까지.. 그냥 opacity 속성으로 주면 자식요소들까지 적용됨,,*/
 }
-
+/*
 #header .header-data {
   font-weight: 600;
   font-size: 12px;
@@ -36,12 +38,12 @@ body {
   display: block;
   color: #a8a8a8;
   z-index: 2;
-}
+}*/
 #header .header-title {
   font-family: AppleSDGothicNeo;
   font-weight: 700;
   font-size: 32px;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 10px;
   z-index: 2;
 }
